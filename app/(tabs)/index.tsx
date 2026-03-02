@@ -1,11 +1,14 @@
-import { Text, View } from "react-native";
+import { Dimensions, SectionList, Text, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
+
+const {width} = Dimensions.get("screen")
+const {height} = Dimensions.get('window')
+const users = ["John","Ben","Rowland","Abigal"]
 export default function Index() {
   return (
-    <View
-      className="flex-1 justify-center items-center bg-black"
-    >
-      <Text className="text-white font-bold text-3xlr">Edit app/index.tsx to edit this screen 22223.</Text>
-    </View>
+    <SafeAreaView className="flex-1 flex-col justify-center bg-slate-950">
+      
+    </SafeAreaView>
   );
 }
