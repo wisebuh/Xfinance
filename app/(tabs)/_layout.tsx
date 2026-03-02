@@ -14,7 +14,7 @@ interface BarItem {
 const TabBar = ({ focused, name, title }: BarItem) => {
   if (focused) {
     return (
-      <View style={{ backgroundColor: "red", borderRadius: 20, padding: 1, display: "flex",flexDirection:"row", alignItems: "center", minWidth: 80, gap:5, justifyContent:"center"}}>
+      <View style={{ backgroundColor: "red",paddingVertical:2, borderRadius: 20, padding: 1, display: "flex",flexDirection:"row", alignItems: "center", minWidth: 80, gap:5, justifyContent:"center"}}>
         <Ionicons name={name} size={24} color="#fff" />
         <Text className="text-start text-white  font-bold">{title}</Text>
       </View>
@@ -106,6 +106,7 @@ export default function TabLayout() {
         },
         tabBarItemStyle: {
           marginVertical: 10,
+          cursor:"pointer"
         },
       }}
     >
